@@ -1,0 +1,30 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_list{
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+

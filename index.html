@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/header.css">  
+    <link rel="stylesheet" href="styles/style.css">
     <title>Corinthians Landing page</title>
-    <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-    
-<header> 
-    <img src="imagem/logo.png" alt="Logo do Corinthians"> 
+      <header> 
+        <div class="logo">
+            <img src="imagem/logo.png">
+        </div>
 
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Clube</a></li>
-            <li><a href="#">Jogadores</a></li>
-            <li><a href="#">Títulos</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav id="navbar">   
+            
+            <ul id="nav_list">
+                <li class="nav_item">
+                    <a href="#titulos">Títulos</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#topicos">Tópicos</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#saiba">Saiba mais</a>
+                </li>
+             </ul>
+
+             <button class="btn-default">
+                Saiba mais
+             </button>
+
+             <button>
+                <i class="fa-solid fa-bars"></i>
+             </button>
+
+             <div id="mobile_menu">
+                <ul id="nav_list_mobile">
+                    <li class="nav_item_mobile">
+                        <a href="#titulos">Títulos</a>
+                    </li>
+                    <li class="nav_item_mobile">
+                        <a href="#topicos">Tópicos</a>
+                    </li>
+                    <li class="nav_item_mobile">
+                        <a href="#saiba">Saiba mais</a>
+                    </li>
+                </ul>
+        
+        </nav>
+      </header>
+    
 
 <section>
     <img src="imagem/yuri.png" alt="Yuri gol">
@@ -51,5 +83,12 @@
 <section>
     <h2>Tópicos</h2>
 </section>
+<section>
+    <h2>Saiba mais</h2>
+    <div>
+        <img src="imagem/saiba.png" alt="Saiba mais sobre o Corinthians">
+    </div>
+</section>
+
 </body>
 </html>
