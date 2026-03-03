@@ -6,89 +6,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/header.css">  
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/section.css">
     <title>Corinthians Landing page</title>
 </head>
-<body>
-      <header> 
-        <div class="logo">
-            <img src="imagem/logo.png">
-        </div>
 
-        <nav id="navbar">   
-            
-            <ul id="nav_list">
-                <li class="nav_item">
+<body>
+
+<header> *a mexer no header*
+    <div>
+        <div class="logo">
+            <img src="imagem/logo.png" alt="logo do timao">
+        </div>
+    </div>
+    <nav id="navbar">
+        <ul id="nav_list">
+            <li class="nav_item">
+                <a href="#titulos">Títulos</a>
+            </li>
+            <li class="nav_item">
+                <a href="#topicos">Tópicos</a>
+            </li>
+            <li class="nav_item">
+                <a href="#saiba">Saiba mais</a>
+            </li>
+         </ul>
+
+         <button class="btn-default">
+            Saiba mais
+         </button>
+
+         <button>
+            <i class="fa-solid fa-bars"></i>
+         </button>
+
+         <div id="mobile_menu"> 
+            <ul id="nav_list_mobile">
+                <li class="nav_item_mobile">
                     <a href="#titulos">Títulos</a>
                 </li>
-                <li class="nav_item">
+                <li class="nav_item_mobile">
                     <a href="#topicos">Tópicos</a>
                 </li>
-                <li class="nav_item">
+                <li class="nav_item_mobile">
                     <a href="#saiba">Saiba mais</a>
                 </li>
-             </ul>
-
-             <button class="btn-default">
-                Saiba mais
-             </button>
-
-             <button>
-                <i class="fa-solid fa-bars"></i>
-             </button>
-
-             <div id="mobile_menu">
-                <ul id="nav_list_mobile">
-                    <li class="nav_item_mobile">
-                        <a href="#titulos">Títulos</a>
-                    </li>
-                    <li class="nav_item_mobile">
-                        <a href="#topicos">Tópicos</a>
-                    </li>
-                    <li class="nav_item_mobile">
-                        <a href="#saiba">Saiba mais</a>
-                    </li>
-                </ul>
-        
-        </nav>
-      </header>
-    
-
-<section>
-    <img src="imagem/yuri.png" alt="Yuri gol">
-</section>
-
-<section> 
-    <h2>Títulos do timão</h2>
-
-
-    <div>
-        <div>
-            <img src="imagem/mundial.png" alt="Mundial de Clubes">
+            </ul>
          </div>
+    </nav>
+</header>
 
-         <div> 
-                <img src="imagem/libertadores.png" alt="Libertadores">
-         </div>
 
-         <div>
-            <img src="imagem/brasileirao.png" alt="Brasileirão">
-         </div>
 
-         <div>
-            <img src="imagem/paulista.png" alt="Paulista">
-         </div>
+<main>
+    <div>   
+        <section> 
+            <img src="imagem/yuri.png" alt="Yuri gol">
+        </section>
     </div>
-</section>
 
-<section>
-    <h2>Tópicos</h2>
-</section>
-<section>
-    <h2>Saiba mais</h2>
-    <div>
-        <img src="imagem/saiba.png" alt="Saiba mais sobre o Corinthians">
-    </div>
-</section>
+    <section>
+        <h2>Títulos do timão </h2>
+        <div class="talvez">
+            <div>
+                <img src="imagem/mundial.png" alt="Mundial de Clubes">
+             </div>
 
+             <div> 
+                    <img src="imagem/libertadores.png" alt="Libertadores">
+             </div>
+
+             <div>
+                <img src="imagem/brasileirao.png" alt="Brasileirão">
+             </div>
+
+             <div>
+                <img src="imagem/paulista.png" alt="Paulista">
+             </div>
+    </section> 
+
+    <section> 
+        <h2>Tópicos</h2> 
+    </section>
+
+    <section>
+        <h2>Saiba mais</h2>
+        <div class="talvez">
+            <img src="imagem/saiba.png" alt="Saiba mais sobre o Corinthians">
+        </div>
+    </section>
+</main>
+
+
+<script src="script.js"></script>
 </body>
 </html>
