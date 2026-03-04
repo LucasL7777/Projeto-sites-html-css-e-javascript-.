@@ -28,26 +28,50 @@ header{
     height: auto;
 }
 
-.yuri img{
-    width: 900px; 
-    height: auto;
-    background-color: rgb(0, 0, 0);
-    border: 10px solid rgb(0, 0, 0);
-    border-radius: 40px;
-    padding: 10px;
-    margin: 30px 50px;
-    position: center;
-
+.nav-item a{
+    color: #1d1d1d;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.talvez img{
-    width: 300px; 
-    height: auto;
-    background-color: rgb(0, 0, 0);
-    border: 10px solid rgb(0, 0, 0);
-    border-radius: 40px;
-    padding: 10px;
-    margin: 30px 50px;
-    position: center;
+.nav-item.active a{
+    color: blueviolet;
+    border-bottom: 3px solid blueviolet;
+}
 
+#mobile_btn{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+@media screen and (max-width: 1170px){
+    #nav_list,
+    #navbar .btn-defayult{
+        display: none;
+    }
+
+    #mobile_btn{
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size:1.5rem;
+    }
+
+    #mobile_menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
 }
