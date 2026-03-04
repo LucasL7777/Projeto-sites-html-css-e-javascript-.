@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/header.css">  
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/section.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Corinthians Landing page</title>
 </head>
 
@@ -35,24 +36,27 @@
             Saiba mais
          </button>
 
-         <button>
+         <button id="mobile_btn">
             <i class="fa-solid fa-bars"></i>
          </button>
-
+    </nav>
+        
          <div id="mobile_menu"> 
-            <ul id="nav_list_mobile">
-                <li class="nav_item_mobile">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
                     <a href="#titulos">Títulos</a>
                 </li>
-                <li class="nav_item_mobile">
+                <li class="nav-item">
                     <a href="#topicos">Tópicos</a>
                 </li>
-                <li class="nav_item_mobile">
+                <li class="nav-item">
                     <a href="#saiba">Saiba mais</a>
                 </li>
             </ul>
+            <button class="btn-default">
+                Saiba mais
+            </button>
          </div>
-    </nav>
 </header>
 
 
@@ -95,8 +99,6 @@
         </div>
     </section>
 </main>
-
-
-<script src="script.js"></script>
+<script src="javascript/script.js"></script>
 </body>
 </html>

@@ -2,19 +2,21 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    background: black;
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     z-index: 1000;
+
 }
 
 #navbar{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap:40px;
 }
 
 #nav_list{
@@ -25,11 +27,10 @@ header{
 
 .logo img{
     width: 150px;
-    height: auto;
 }
 
 .nav-item a{
-    color: #1d1d1d;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
@@ -41,37 +42,45 @@ header{
 
 #mobile_btn{
     display: none;
+    
 }
 
 #mobile_menu{
     display: none;
+    
 }
 
 @media screen and (max-width: 1170px){
     #nav_list,
-    #navbar .btn-defayult{
+    #navbar .btn-default{
         display: none;
     }
 
     #mobile_btn{
         display: block;
-        background-color: transparent;
+        background-color:transparent;
         border: none;
         font-size:1.5rem;
+        cursor: pointer;
     }
 
-    #mobile_menu{
+    #mobile_menu.active{
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 40px;
-        background-color: black;
-        padding: 20px;
-        border-radius: 8px;
+        align-items: center;
     }
 
-    .nav-item {
-        margin-bottom: 10px;
+    #mobile_nav_list{
+        margin: 12px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
     }
 }
+
+
