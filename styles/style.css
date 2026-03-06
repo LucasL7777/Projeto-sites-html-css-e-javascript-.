@@ -35,18 +35,18 @@ main{
   box-shadow: 0px 0px 15px 4px rgba(221, 204, 236, 0.5);
 }
 
-.social-media-buttons{
+.social-midia-buttons{
   display: flex;
   gap: 18px;
 }
 
-.social-media-buttons a{
+.social-midia-buttons a{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 45px;
   height: 40px;
-  background-color: seashell;
+  background-color: rgb(106, 35, 137);
   border-radius: 10px;
   text-decoration: none;
   color: #1d1d1d;
@@ -55,7 +55,7 @@ main{
 
 }
 
-.social-media-buttons a:hover{
+.social-midia-buttons a:hover{
   box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.2);
 }
 

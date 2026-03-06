@@ -2,7 +2,7 @@
     display: flex;
     min-height:calc(100vh - 80px);
     position: relative;
-
+    
 }
 
 #cta{
@@ -59,4 +59,23 @@
   right: 0;
   z-index: 1;
   
+}
+
+@media screen and (max-width:1170px){ 
+    #home{
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape{
+        display: none;
+    }
+
+    #cta{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
 }
