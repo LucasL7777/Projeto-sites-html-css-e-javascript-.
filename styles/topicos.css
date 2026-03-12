@@ -69,7 +69,18 @@
     height: auto;
     display: block;
 }
-
+#saiba{
+    padding: 80px 20px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#saiba h2{
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
 @media screen and (max-width:768px){
 
     .topicos{
@@ -81,7 +92,8 @@
 @media screen and (max-width:450px){
 
     .topicos{
-        grid-template-columns:1fr;
+        flex-direction:column;
+        align-items:center;
     }
 
 }

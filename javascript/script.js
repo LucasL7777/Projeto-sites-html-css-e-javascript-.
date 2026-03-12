@@ -46,6 +46,11 @@ $(document).ready(function() {
             duration: 1500,
             distance: '20%'
         });
+        ScrollReveal().reveal('#banner', {
+            origin: 'right',
+            distance: '60px',
+            duration: 1500
+        });
         
         ScrollReveal().reveal('.talvez .card', {
             origin: 'bottom',
@@ -56,7 +61,7 @@ $(document).ready(function() {
         
         
         ScrollReveal().reveal('.topicos .card', {
-            origin: 'right',
+            origin: 'bottom',
             duration: 1200,
             distance: '20%',
             interval: 150
@@ -67,6 +72,12 @@ $(document).ready(function() {
             duration:1200,
             distance:'20%',
             interval:100
+        });
+        ScrollReveal().reveal('#saiba .saiba-card', {
+            origin: 'bottom',
+            duration: 1500,
+            distance: '20%', 
+            scale: 0.9
         });
     }
     
