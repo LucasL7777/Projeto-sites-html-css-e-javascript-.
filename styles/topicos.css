@@ -1,9 +1,11 @@
 .topicos {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
-    gap: 40px; 
+    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     margin-top: 40px;
     padding:20px;
+
 }
 .card {
   background: rgba(20, 20, 20, 0.9);
