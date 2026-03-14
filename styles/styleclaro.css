@@ -106,8 +106,16 @@ body.claro #cta .title{
 }
 
 body.claro footer p{
-    color:white;
+    color:rgb(0, 0, 0);
 }
 body.claro footer{
-    color:rgb(255, 255, 255)
+    background:#f5f5f5;
+    color:black;
+
 }
+body.claro footer-title{
+    color: black;
+}
+
+
+
