@@ -17,8 +17,12 @@ function trocarAba(abaId) {
     if (mensagemInicial) {
         mensagemInicial.style.display = 'none';
     }
+    
+      document.querySelectorAll('.tabs span').forEach(span => {
+        span.classList.remove('active');
+    });
+    document.querySelector(`.tabs span[onclick="trocarAba('${abaId}')"]`).classList.add('active');
 }
-
 
 function mostrarMensagemInicial() {
     const mensagemInicial = document.getElementById('mensagem-inicial');
@@ -32,3 +36,4 @@ function mostrarMensagemInicial() {
         conteudo.classList.remove('ativo');
     });
 }
+
