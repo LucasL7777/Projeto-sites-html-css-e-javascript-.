@@ -21,9 +21,7 @@ app.post("/api/chat", async (req, res) => {
   if (!apiKey) {
     return res.status(500).json({ error: "Chave da API não configurada." });
   }
-
-  const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
-
+  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;  
   try {
     const response = await fetch(apiUrl, {
       method: "POST",
