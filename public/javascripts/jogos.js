@@ -35,12 +35,17 @@ document.addEventListener("DOMContentLoaded", async function () {
         <div class="jogo-card">
           <div class="jogo-competicao">🏆 ${jogo.competicao}</div>
           <div class="jogo-times">
-            <span>${jogo.timeCasa}</span>
+            <div class="time">
+              <img src="${jogo.timeCasaLogo}" alt="${jogo.timeCasa}" class="time-logo">
+              <span>${jogo.timeCasa}</span>
+            </div>
             <span class="jogo-vs">VS</span>
-            <span>${jogo.timeVisitante}</span>
+            <div class="time">
+              <img src="${jogo.timeVisitanteLogo}" alt="${jogo.timeVisitante}" class="time-logo">
+              <span>${jogo.timeVisitante}</span>
+            </div>
           </div>
           <div class="jogo-data">📅 ${dia} • 🕖 ${hora}</div>
-          <div class="jogo-estadio">📍 ${jogo.estadio}</div>
         </div>
       `;
     }).join("");

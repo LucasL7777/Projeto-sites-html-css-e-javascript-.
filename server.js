@@ -58,11 +58,14 @@ app.get("/api/jogos", async (req, res) => {
 
     const jogos = data.matches.map(match => ({
       competicao: match.competition.name,
+      competicaoLogo: match.competition.emblem,
       data: match.utcDate,
       timeCasa: match.homeTeam.name,
+      timeCasaLogo: match.homeTeam.crest,
       timeVisitante: match.awayTeam.name,
+      timeVisitanteLogo: match.awayTeam.crest,
       estadio: match.venue || "A definir"
-    }));
+}));
 
     res.json({ jogos });
 
