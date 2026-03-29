@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleclaro.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/analise.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <title>Análise de Dados — Corinthians</title>
+</head>
+<body>
+      <button id="toggleTema" onclick="alternarTema()">🌒</button>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="../imagem/logo.png" alt="Logo do Corinthians">
+            </div>
+            <ul id="nav_list"></ul>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="../index.html" class="btn-default desktop-only">Voltar ao site</a>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list"></ul>
+
+            <a href="../index.html" class="btn-default">Voltar ao site</a>
+        </div>
+    </header>
+    <main id="analise-content">
+        <section id="analise-hero">
+            <div class="analise-hero-text">
+                <h1>📊 Análise de <span>Dados</span></h1>
+                <p>Estatísticas e desempenho do Corinthians na temporada atual</p>
+            </div>
+        </section>
+        <section id="analise-cards">
+            <div class="stats-grid" id="stats-grid">
+                <div class="loading-card">Carregando...</div>
+            </div>
+        </section>
+        <section id="analise-graficos">
+            <div class="graficos-grid">
+                <div class="grafico-box">
+                    <h3>🥧 Aproveitamento</h3>
+                    <p class="grafico-sub">Distribuição de resultados na temporada</p>
+                    <div class="grafico-wrapper">
+                        <canvas id="graficoPizza"></canvas>
+                    </div>
+                </div>
+                <div class="grafico-box">
+                    <h3>📈 Evolução de Pontos</h3>
+                    <p class="grafico-sub">Acúmulo de pontos nos últimos jogos</p>
+                    <div class="grafico-wrapper">
+                        <canvas id="graficoLinha"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="analise-resultados">
+            <h2>🏟️ Últimos <span>Resultados</span></h2>
+            <div id="resultados-container">
+                <p class="analise-loading">Carregando resultados...</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="../index.html">
+            <img src="../imagem/logo.png" class="footer-logo" alt="logo">
+        </a>
+        <h3 class="footer-title">Desenvolvedores</h3>
+        <div class="footer-devs">
+            <div class="dev">
+                <p class="dev-name">Lucas Lima</p>
+                <div class="dev-links">
+                    <a href="https://www.linkedin.com/in/lucas-lima-bb0043246/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> Linkedin
+                    </a>
+                    <a href="https://github.com/LucasLn7" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="dev">
+                <p class="dev-name">Isabella Ramos</p>
+                <div class="dev-links">
+                    <a href="https://www.linkedin.com/in/isabella-frança-3047a4285/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> Linkedin
+                    </a>
+                    <a href="https://github.com/isafranca8" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-frase">-A torcida que tem um time-</p>
+        <p class="footer-copy">© 2026 - Corinthians Landing Page</p>
+    </footer>
+    <script src="../javascripts/mudartema.js"></script>
+    <script src="../javascripts/analise.js"></script>
+    <script src="../javascripts/menu.js"></script>
+</body>
+</html>

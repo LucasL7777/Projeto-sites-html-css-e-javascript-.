@@ -1,0 +1,108 @@
+#analise-hero {
+    padding: 120px 40px 60px;
+    text-align: center;
+}
+#analise-hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 12px;
+}
+#analise-hero h1 span { color: #c0392b; }
+#analise-hero p { font-size: 1.1rem; color: #aaa; }
+
+#analise-cards { padding: 20px 40px 60px; }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(180,0,0,0.3);
+}
+.stat-card .stat-icon { font-size: 2rem; margin-bottom: 10px; }
+.stat-card .stat-valor { font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.stat-card .stat-label { font-size: 0.8rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+.stat-card.vitorias     { border-top: 3px solid #2ecc71; }
+.stat-card.empates      { border-top: 3px solid #f39c12; }
+.stat-card.derrotas     { border-top: 3px solid #e74c3c; }
+.stat-card.aproveitamento { border-top: 3px solid #c0392b; }
+.stat-card.gols-pro     { border-top: 3px solid #3498db; }
+.loading-card { color: #aaa; grid-column: 1 / -1; text-align: center; padding: 30px; }
+
+#analise-graficos { padding: 20px 40px 60px; }
+
+.graficos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.grafico-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 28px 24px;
+}
+.grafico-box h3 { font-size: 1.1rem; color: #fff; margin-bottom: 4px; }
+.grafico-sub { font-size: 0.8rem; color: #888; margin-bottom: 20px; }
+.grafico-wrapper { position: relative; height: 260px; }
+
+#analise-resultados {
+    padding: 20px 40px 80px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#analise-resultados h2 { font-size: 1.8rem; color: #fff; margin-bottom: 30px; text-align: center; }
+#analise-resultados h2 span { color: #c0392b; }
+
+.resultado-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+}
+.resultado-card:hover { background: rgba(255,255,255,0.08); }
+.resultado-card.vitoria { border-left: 4px solid #2ecc71; }
+.resultado-card.empate  { border-left: 4px solid #f39c12; }
+.resultado-card.derrota { border-left: 4px solid #e74c3c; }
+
+.resultado-times { display: flex; align-items: center; gap: 12px; flex: 1; }
+.resultado-times img { width: 28px; height: 28px; object-fit: contain; }
+.resultado-times .time-nome { font-size: 0.9rem; color: #fff; font-weight: 500; }
+.resultado-placar { font-size: 1.2rem; font-weight: 700; color: #fff; min-width: 60px; text-align: center; }
+.resultado-info { text-align: right; font-size: 0.75rem; color: #888; min-width: 100px; }
+
+.resultado-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; margin-bottom: 4px; }
+.badge-v { background: #2ecc71; color: #000; }
+.badge-e { background: #f39c12; color: #000; }
+.badge-d { background: #e74c3c; color: #fff; }
+
+.analise-loading { color: #aaa; text-align: center; padding: 20px; }
+
+@media (max-width: 768px) {
+    #analise-hero { padding: 100px 20px 40px; }
+    #analise-hero h1 { font-size: 2rem; }
+    #analise-cards, #analise-graficos, #analise-resultados { padding: 20px; }
+    .graficos-grid { grid-template-columns: 1fr; }
+    .resultado-card { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .resultado-info { text-align: left; }
+}
